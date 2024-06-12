@@ -1,0 +1,250 @@
+body{
+    overflow: hidden;
+}
+/*Form*/
+.wrapper{
+    margin-top: 35px;
+    padding: 0 20px 0 20px;
+}
+
+form{
+    
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+img:not(.navbar-brand img){
+    width: 60px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.row{
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background: #f3f3f3;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.side-image{
+    background: #712F31;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+
+.text{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text p{
+    color: #fff;
+    font-size: 18px;
+}
+
+i{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: solid 1px #7e7e7e;
+    border-left: none;
+    border-radius:0 10px 10px 0;
+}
+
+.input-box{
+    width: 330px;
+    box-sizing: border-box;
+}
+
+.input-box header{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.input-box header span{
+    font-weight: 500;
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+
+.input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    color: #40414a;
+    margin-bottom: 20px;
+}
+
+.input-box .input-field label{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-field input:focus ~ label{
+    top: -10px;
+    font-size: 13px;
+}
+
+.input-field input:valid ~ label{
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
+}
+
+.input-field input:focus:not(.submit) , .input-field input:valid:not(.submit){
+    border-bottom: 2px solid #712F31;
+}
+
+.submit{
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #d8d8d8;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+    color: #712F31;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.submit:hover{
+    background: #712F31;
+    color: #fff;
+}
+
+.signin{
+    text-align: center;
+    font-size: small;
+}
+
+span button{
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 768px){
+    .side-image{
+        border-radius: 10px 10px 0 0;
+        padding: 20px 20px;
+    }
+    img:not(.navbar-brand img){
+        visibility: hidden;
+    }
+    .text{
+        position: absolute;
+        text-align: center;
+        margin-top: 10px;
+        top: 50%;
+        width: 80%;
+    }
+
+    .text p,i{
+        font-size: 15px;
+    }
+
+    .row{
+        max-width: 420px;
+        width: 100%;
+    }
+
+    .right{
+        border: solid 1px #7e7e7e;
+        border-top:none;
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+/*Modal*/
+.modal-content{
+    background: none;
+    border: none;
+}
+
+#signin-popup{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#signin-popup .row{
+        width: 900px;
+        height: 550px;
+        border-radius: 10px;
+        background: #fff;
+    }
+
+.modal-body{
+    padding: 0;
+    margin-top: 10%;
+    border-radius: 5px ;
+}
+
+.modal-body .btn-close{
+    position: absolute;
+    right: 0;
+    padding: 1em;
+    z-index: 2;
+
+}
+
+.main2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.main2 .input-box header{
+    color:#712F31
+}
+
+.main2 .right{
+    border:none;
+}
+
+.btn-close{
+    top:0;
+}
